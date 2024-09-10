@@ -12,7 +12,30 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="DocumentModels\" />
+      <None Remove="img\Armoiries-RCA_tuned_v1.png" />
+      <EmbeddedResource Include="img\Armoiries-RCA_tuned_v1.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="img\Armoiries-RCA_v2.png" />
+      <EmbeddedResource Include="img\Armoiries-RCA_v2.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="img\carte_vert_points.jpg" />
+      <EmbeddedResource Include="img\carte_vert_points.jpg">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="img\vecteezy_abstract-african-art-shapes-tribal-doodle-decoration-ethnic_47587031.png" />
+      <EmbeddedResource Include="img\vecteezy_abstract-african-art-shapes-tribal-doodle-decoration-ethnic_47587031.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="img\vecteezy_abstract-african-art-shapes-tribal-doodle-decoration-ethnic_47587076.png" />
+      <EmbeddedResource Include="img\vecteezy_abstract-african-art-shapes-tribal-doodle-decoration-ethnic_47587076.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="img\vecteezy_golden-stripe-outline-decorative-geometric-vintage-design_38080406.png" />
+      <EmbeddedResource Include="img\vecteezy_golden-stripe-outline-decorative-geometric-vintage-design_38080406.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
     </ItemGroup>
 
 </Project>

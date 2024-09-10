@@ -4,11 +4,11 @@ public sealed class CertificatModel
 {
     public int Id { get; set; }
 
-    public string Reference => $"{Id}/AMB/RCA/SC/F";
+    public string Reference => $"{Id:D3}/AMB/RCA/SC/F";
     
     public string Title { get; set; }
     
-    public string ValidatorName { get; set; }
+    public string ValidatorFullName { get; set; }
     public string ValidatorOccupation { get; set; }
     public string ReferenceOfLaw { get; set; }
     
@@ -18,5 +18,5 @@ public sealed class CertificatModel
     public string BeneficiaryFullName { get; set; }
     
     public string CountryOfSignature { get; set; }
-    public DateOnly DateOfSignature { get; set; }
+    public DateTime DateOfSignature { get; set; }
 }
