@@ -13,7 +13,7 @@ QuestPDF.Settings.License = LicenseType.Community;
 var document = new CertificatDocument(CertificatDataSource.GetCertificatModel());
   
 // instead of the standard way of generating a PDF file
-// document.GeneratePdf("hello.pdf");
+document.GeneratePdf("certificat_flou_2.pdf");
     
 // use the following invocation
-document.ShowInPreviewer();
+// document.ShowInPreviewer();

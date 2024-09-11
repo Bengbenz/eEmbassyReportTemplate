@@ -1,4 +1,6 @@
-namespace eEmbassyPdfReportTemplate.DataSource;
+using QRCoder;
+
+namespace eEmbassyPdfReportTemplate.DocumentModels;
 
 public sealed class CertificatModel
 {
@@ -19,4 +21,21 @@ public sealed class CertificatModel
     
     public string CountryOfSignature { get; set; }
     public DateTime DateOfSignature { get; set; }
+
+    public byte[] GetQrCode()
+    {
+      QRCodeGenerator qrGenerator = new QRCodeGenerator();
+      QRCodeData qrCodeData = qrGenerator.CreateQrCode(Reference, QRCodeGenerator.ECCLevel.M);
+      PngByteQRCode qrCode = new PngByteQRCode(qrCodeData);
+
+      byte[] qrCodeImage = qrCode.GetGraphic(50);
+      return qrCodeImage;
+      // PayloadGenerator.Url generator = new PayloadGenerator.Url("https://github.com/codebude/QRCoder/");
+      // string payload = generator.ToString();
+      //
+      // QRCodeGenerator qrGenerator = new QRCodeGenerator();
+      // QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload, QRCodeGenerator.ECCLevel.Q);
+      // QRCode qrCode = new QRCode(qrCodeData);
+      // return qrCode.GetGraphic(30);
+    }
 }

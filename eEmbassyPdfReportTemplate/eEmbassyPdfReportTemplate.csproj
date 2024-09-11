@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <PackageReference Include="QuestPDF" Version="2024.7.3" />
+      <PackageReference Include="QrCoder" Version="1.6.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -34,6 +35,19 @@
       </EmbeddedResource>
       <None Remove="img\vecteezy_golden-stripe-outline-decorative-geometric-vintage-design_38080406.png" />
       <EmbeddedResource Include="img\vecteezy_golden-stripe-outline-decorative-geometric-vintage-design_38080406.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="img\Logos_Ministeres-AMBASSADE-black_0.png" />
+      <EmbeddedResource Include="img\Logos_Ministeres-AMBASSADE-black_0.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="img\carte_vert_points_flou_1.png" />
+      <EmbeddedResource Include="img\carte_vert_points_flou_1.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="img\carte_vert_points_flou_2.jpg" />
+      <None Remove="img\carte_vert_points_flou_2.png" />
+      <EmbeddedResource Include="img\carte_vert_points_flou_2.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </EmbeddedResource>
     </ItemGroup>

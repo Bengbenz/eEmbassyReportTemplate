@@ -2,6 +2,8 @@
 // Copyright (c) 2024 Caleb BENGUELET, @Bengbenz
 // See more info in [LICENSE] file.
 
+using eEmbassyPdfReportTemplate.DocumentModels;
+
 namespace eEmbassyPdfReportTemplate.DataSource;
 
 public static class CertificatDataSource
@@ -16,9 +18,9 @@ public static class CertificatDataSource
       ValidatorOccupation = "Chargé des affaires",
       ReferenceOfLaw = "N°97.013 en ses articles 64, 65 et 69",
       ParentGender = "Monsieur",
-      ParentFullName = "KETEGUIA Waldren Keyden",
-      BeneficiaryFullName = "",
-      CountryOfSignature = "",
+      ParentFullName = "KETEGUIA GBABADJA Emery Brell",
+      BeneficiaryFullName = "KETEGUIA Waldren Keyden",
+      CountryOfSignature = "Paris",
       DateOfSignature = DateTime.Today
     };
   }
